@@ -1,0 +1,8 @@
+# Ignore artifacts:
+build
+coverage
+
+# Mandatory task requirements:
+node_modules/
+package-lock.json
+.github/
