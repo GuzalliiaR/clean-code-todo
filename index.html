@@ -28,62 +28,70 @@
     </header>
 
     <main class="container-main">
-      <h3>
-        <label for="new-task">Add Item</label>
-      </h3>
-      <div class="task-row-wrapper">
-        <input id="new-task" class="task" type="text" />
-        <button type="button">Add</button>
-      </div>
-      <h3>Todo</h3>
-      <ul id="incompleteTasks">
-        <li>
-          <input type="checkbox" id="task-checkbox-1" />
-          <label class="task" for="task-checkbox-1">Pay Bills</label>
-          <input
-            type="text"
-            class="task"
-            aria-label="Edit task text"
-            title="Edit task"
-          />
-          <button class="edit" type="button">Edit</button>
-          <button class="delete" type="button">
-            <img src="./remove.svg" alt="Remove task" />
-          </button>
-        </li>
-        <li class="editMode">
-          <input type="checkbox" id="task-checkbox-2" />
-          <label class="task" for="task-checkbox-2"> Go Shopping </label>
-          <input
-            type="text"
-            value="Go Shopping"
-            class="task"
-            aria-label="Edit task text"
-            title="Edit task"
-          />
-          <button class="edit" type="button">Save</button>
-          <button class="delete" type="button">
-            <img src="./remove.svg" alt="Remove task" />
-          </button>
-        </li>
-      </ul>
-      <h3>Completed</h3>
-      <ul id="completed-tasks">
-        <li>
-          <input type="checkbox" checked id="task-checkbox-3" />
-          <label class="task" for="task-checkbox-3">See the Doctor</label>
-          <input
-            type="text"
-            class="task"
-            aria-label="Edit task text"
-            title="Edit task"
-          />
-          <button class="edit" type="button">Edit</button>
-          <button class="delete" type="button">
-            <img src="./remove.svg" alt="Remove task" />
-          </button>
-        </li>
-      </ul>
+      <section class="add-task-section">
+        <h3>
+          <label for="new-task">Add Item</label>
+        </h3>
+        <div class="task-row-wrapper">
+          <input id="new-task" class="task" type="text" />
+          <button type="button">Add</button>
+        </div>
+      </section>
+
+      <section class="todo-section">
+        <h3>Todo</h3>
+        <ul id="incompleteTasks">
+          <li>
+            <input type="checkbox" id="task-checkbox-1" />
+            <label class="task" for="task-checkbox-1">Pay Bills</label>
+            <input
+              type="text"
+              class="task"
+              aria-label="Edit task text"
+              title="Edit task"
+            />
+            <button class="edit" type="button">Edit</button>
+            <button class="delete" type="button">
+              <img src="./remove.svg" alt="Remove task" />
+            </button>
+          </li>
+          <li class="editMode">
+            <input type="checkbox" id="task-checkbox-2" />
+            <label class="task" for="task-checkbox-2"> Go Shopping </label>
+            <input
+              type="text"
+              value="Go Shopping"
+              class="task"
+              aria-label="Edit task text"
+              title="Edit task"
+            />
+            <button class="edit" type="button">Save</button>
+            <button class="delete" type="button">
+              <img src="./remove.svg" alt="Remove task" />
+            </button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="completed-section">
+        <h3>Completed</h3>
+        <ul id="completed-tasks">
+          <li>
+            <input type="checkbox" checked id="task-checkbox-3" />
+            <label class="task" for="task-checkbox-3">See the Doctor</label>
+            <input
+              type="text"
+              class="task"
+              aria-label="Edit task text"
+              title="Edit task"
+            />
+            <button class="edit" type="button">Edit</button>
+            <button class="delete" type="button">
+              <img src="./remove.svg" alt="Remove task" />
+            </button>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <script type="text/javascript" src="app.js"></script>
