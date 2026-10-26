@@ -63,10 +63,9 @@ const editTask = function () {
   const editInput = listItem.querySelector('input[type=text]');
   const label = listItem.querySelector('label');
   const editBtn = listItem.querySelector('.edit');
-  const containsClass = listItem.classList.contains('editMode');
 
   // switch of edit mode
-  if (containsClass) {
+  if (listItem.classList.contains('editMode')) {
     label.innerText = editInput.value;
     editBtn.innerText = 'Edit';
   } else {
@@ -96,7 +95,6 @@ const taskIncomplete = function () {
   bindTaskEvents(listItem, taskCompleted);
 };
 
-addButton.onclick = addTask;
 addButton.addEventListener('click', addTask);
 
 const bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
