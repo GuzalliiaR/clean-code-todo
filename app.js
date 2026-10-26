@@ -14,17 +14,27 @@ const createNewTaskElement = function (taskString) {
   const deleteButton = document.createElement('button');
   const deleteButtonImg = document.createElement('img');
 
+  const idCheckBox = 'task-checkbox-' + Date.now();
+
   label.innerText = taskString;
   label.className = 'task';
+  label.htmlFor = idCheckBox;
 
   checkBox.type = 'checkbox';
+  checkBox.id = idCheckBox;
+
   editInput.type = 'text';
   editInput.className = 'task';
+  editInput.name = 'edit-task';
+  editInput.setAttribute('aria-label', 'Edit task text');
+  editInput.title = 'Edit task';
 
   editButton.innerText = 'Edit';
   editButton.className = 'edit';
+  editButton.type = 'button';
 
   deleteButton.className = 'delete';
+  deleteButton.type = 'button';
   deleteButtonImg.src = './remove.svg';
   deleteButton.appendChild(deleteButtonImg);
 
